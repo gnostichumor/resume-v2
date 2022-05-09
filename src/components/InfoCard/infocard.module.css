@@ -1,3 +1,5 @@
 .card {
-  background-color: var(--priamer)
+  background-color: var(--accent-color-primary);
+  display: flex;
+  justify-content: center;
 }

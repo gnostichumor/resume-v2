@@ -1,8 +1,12 @@
 import React from 'react'
+import InfoCard from '../InfoCard/InfoCard'
 
 const ProfileBlock = () => {
   return (
-    <div className='profile-block'>ProfileBlock</div>
+    <InfoCard>
+      <div className='profile-block'>ProfileBlock</div>
+    </InfoCard>
+    
   )
 }
 
