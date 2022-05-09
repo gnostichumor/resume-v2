@@ -32,12 +32,12 @@ const Sidebar = () => {
  const openNav = () => {
   document.getElementById('mySidenav')!.style.width = '250px'
   document.getElementById('main')!.style.marginLeft = '250px'
-  const links = document.querySelectorAll('.sidebar-links')
+  const links = document.querySelectorAll<HTMLElement>('.sidebar-links')
   links.forEach(link => {
     link.style.display = 'block';
-    link.style.opacity = 0;
+    link.style.opacity = '0';
     setTimeout(()=> {
-      link.style.opacity = 1
+      link.style.opacity = '1'
     }, 500)
   })
   // links.forEach(link => (link).style.opacity = '1')
@@ -47,7 +47,7 @@ const Sidebar = () => {
  const closeNav = () => {
   document.getElementById('mySidenav')!.style.width = '0'
   document.getElementById('main')!.style.marginLeft = '0'
-  const links = document.querySelectorAll('.sidebar-links')
+  const links = document.querySelectorAll<HTMLElement>('.sidebar-links')
   links.forEach(link => link.style.display = 'none')
  }
  return (
