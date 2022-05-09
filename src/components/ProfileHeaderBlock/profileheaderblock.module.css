@@ -1,0 +1,8 @@
+@import '../../variables.css';
+
+.profileheader {
+    display: flex;
+    flex-position: center;
+    justify-content: column;
+    font-color: var(--accent-color-primary);
+}

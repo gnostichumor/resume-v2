@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import * as styles from './sidebar.module.css'
+import ProfileHeaderBlock from '../ProfileHeaderBlock/ProfileHeaderBlock';
+import { HiMenu } from "@react-icons/all-files/hi/HiMenu";
 
 const sidebarLinks = [
  {
@@ -51,15 +53,16 @@ const Sidebar = () => {
  return (
   <>
    <div id="mySidenav" className={styles.sidenav}>
-    <a href="javascript:void(0)" className={styles.closebtn} onClick={closeNav}>
+    <a className={styles.closebtn} onClick={closeNav}>
      &times;
     </a>
+    <ProfileHeaderBlock/>
     {sidebarLinks.map((link) => <Link className="sidebar-links" to={link.url}>{link.title}</Link>)}
    </div>
    
-   <button className={styles.openbtn} onClick={openNav}>
-    Open
-   </button>
+   <div className={styles.openbtn} onClick={openNav}>
+    <HiMenu className='hi-menu-button' size={50} />
+   </div>
   </>
  )
 }

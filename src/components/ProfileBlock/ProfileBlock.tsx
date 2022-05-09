@@ -1,8 +1,17 @@
 import React from 'react'
+import Layout from '../Layout/Layout'
+import ProfileHeaderBlock from "../ProfileHeaderBlock/ProfileHeaderBlock";
+import ProfileDescriptionBlock from '../ProfileDescriptionBlock/ProfileDescriptionBlock';
 
 const ProfileBlock = () => {
   return (
-    <div className='profile-block'>ProfileBlock</div>
+    <Layout>
+      <div className='profile-block'>ProfileBlock
+        <ProfileHeaderBlock />
+        <ProfileDescriptionBlock />
+      </div>
+    </Layout>
+
   )
 }
 
