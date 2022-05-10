@@ -6,7 +6,7 @@ type Props = {
 }
 
 const InfoCard = ({ children }: Props) => {
-    return <div>{children}</div>
+    return <div className={styles.card}>{children}</div>
 }
 
 export default InfoCard
