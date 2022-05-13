@@ -40,7 +40,7 @@
 
 /* Position and style the close button (top right corner) */
 .openbtn {
-    color: green;
+    color: var(--accent-color-primary);
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -52,9 +52,10 @@
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {
+        width: 100%;
         padding-top: 15px;
     }
     .sidenav a {
-        font-size: 18px;
+        font-size: 16px;
     }
 }

@@ -1,0 +1,36 @@
+@import '../../variables.css';
+
+.cardDetails {
+    color: var(--accent-color-secondary);
+    
+}
+
+.cardDetailsHeadingBlock {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px; */
+    font-color: white;
+}
+
+.cardDetailsHeading {
+    /* padding: 5px, 5px, 5px, 5px; */
+    text-color: white;
+    font-size: 2em;
+}
+
+.cardDetailsSubHeading {
+    font-size: 1.75em;
+}
+
+.cardDetailsParagraph {
+    font-size: 1em;
+}
+
+.cardDetailsList {
+    margin-left: 5rem;
+    margin-right: 10rem;
+    font-size: 1.5em;
+
+}

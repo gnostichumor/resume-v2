@@ -1,3 +1,7 @@
 :root {
   --accent-color-primary: #f28705;
+  --accent-color-secondary: #012E40;
+  --accent-color-tertiary: #025159;
+  --highlight-color: #03A696;
+  --highligh-secondary-color: #038C8C;
 }

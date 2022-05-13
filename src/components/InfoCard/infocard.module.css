@@ -1,3 +1,8 @@
+@import '../../variables.css';
+
 .card {
-  background-color: var(--priamer)
+  margin: auto;
+  padding: 2rem 2rem 2rem 2rem;
+  max-width: calc(100% - 20rem);
+  background-color: var(--accent-color-primary);
 }
