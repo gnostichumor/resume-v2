@@ -1,13 +1,18 @@
-import React from 'react'
-import InfoCard from '../InfoCard/InfoCard'
+import React from 'react';
+import Layout from '../Layout/Layout';
+import ProfileHeaderBlock from '../ProfileHeaderBlock/ProfileHeaderBlock';
+import ProfileDescriptionBlock from '../ProfileDescriptionBlock/ProfileDescriptionBlock';
 
 const ProfileBlock = () => {
   return (
-    <InfoCard>
-      <div className='profile-block'>ProfileBlock</div>
-    </InfoCard>
-    
-  )
-}
+    <Layout>
+      <div className="profile-block">
+        ProfileBlock
+        <ProfileHeaderBlock />
+        <ProfileDescriptionBlock />
+      </div>
+    </Layout>
+  );
+};
 
-export default ProfileBlock
+export default ProfileBlock;
